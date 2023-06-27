@@ -1,0 +1,8 @@
+<h1>Lista de tus Peliculas favoritas</h1>
+<% @movies.each do |movie| %>
+  <div>
+    <h3><%= movie.name %></h3>
+    <p><%= movie.synopsis %></p>
+    <p><strong>Director:</strong> <%= movie.director %></p>
+  </div>
+<% end %>

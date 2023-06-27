@@ -1,0 +1,20 @@
+<h1>Ingrese su Documental favorito</h1>
+
+<%= form_with model: @documentary_films, url: documentary_film_path do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :synopsis %>
+    <%= form.text_area :synopsis %>
+  </div>
+  <div>
+    <%= form.label :director %>
+    <%= form.text_field :director %>
+  </div>
+  <div>
+    <%= form.submit 'Ingresar' %>
+  </div>
+<% end %>
+

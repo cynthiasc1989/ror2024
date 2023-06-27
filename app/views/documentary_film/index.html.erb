@@ -1,0 +1,8 @@
+<h1>Lista de tus Documentales favoritos</h1>
+<% @documentary_film.each do |documentary_films| %>
+  <div>
+    <h3><%= documentary_films.name %></h3>
+    <p><%= documentary_films.synopsis %></p>
+    <p><strong>Director:</strong> <%= documentary_films.director %></p>
+  </div>
+<% end %>
